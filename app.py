@@ -31,12 +31,12 @@ st.set_page_config(
 # -----------------------------------------------------------------
 @st.cache_resource
 def load_artifact():
-    with open("C:/Users/User/Downloads/churn_model.pkl", "rb") as f:
+    with open("churn_model.pkl", "rb") as f:
         return pickle.load(f)
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("C:/Users/User/Downloads/customer_churn_dataset.csv")
+    return pd.read_csv("customer_churn_dataset.csv")
 
 artifact = load_artifact()
 

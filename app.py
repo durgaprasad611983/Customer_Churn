@@ -12,9 +12,9 @@ Run with:
 import pickle
 import numpy as np
 import pandas as pd
-#import streamlit as st
+import streamlit as st
 #import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 from sklearn.metrics import confusion_matrix
 
 # -----------------------------------------------------------------

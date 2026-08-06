@@ -31,9 +31,20 @@ st.set_page_config(
 # -----------------------------------------------------------------
 @st.cache_resource
 def load_artifact():
-    with open("churn_model.pkl", "rb") as f:
-        return pickle.load(f)
 
+    path = "churn_model.pkl"
+
+    st.write("Current Directory:", os.getcwd())
+    st.write("File Exists:", os.path.exists(path))
+
+    if os.path.exists(path):
+        st.write("File Size:", os.path.getsize(path), "bytes")
+
+    with open(path, "rb") as f:
+        model = pickle.load(f)
+
+    return model
+    
 @st.cache_data
 def load_data():
     return pd.read_csv("customer_churn_dataset.csv")

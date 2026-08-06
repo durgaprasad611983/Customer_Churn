@@ -31,19 +31,8 @@ st.set_page_config(
 # -----------------------------------------------------------------
 @st.cache_resource
 def load_artifact():
-
-    path = "churn_model.pkl"
-
-    st.write("Current Directory:", os.getcwd())
-    st.write("File Exists:", os.path.exists(path))
-
-    if os.path.exists(path):
-        st.write("File Size:", os.path.getsize(path), "bytes")
-
-    with open(path, "rb") as f:
-        model = pickle.load(f)
-
-    return model
+    model = pickle.load(f)
+return model
     
 @st.cache_data
 def load_data():

@@ -31,12 +31,12 @@ st.set_page_config(
 # -----------------------------------------------------------------
 @st.cache_resource
 def load_artifact():
-    with open("C:/Users/ExcelR/Downloads/churn_model.pkl", "rb") as f:
+    with open("https://github.com/durgaprasad611983/Customer_Churn/blob/main/churn_model.pkl", "rb") as f:
         return pickle.load(f)
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("C:/Users/ExcelR/Downloads/customer_churn_dataset.csv")
+    return pd.read_csv("https://github.com/durgaprasad611983/Customer_Churn/blob/main/customer_churn_dataset.csv")
 
 try:
     artifact = load_artifact()

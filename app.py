@@ -38,15 +38,7 @@ def load_artifact():
 def load_data():
     return pd.read_csv("https://github.com/durgaprasad611983/Customer_Churn/blob/main/customer_churn_dataset.csv")
 
-try:
-    artifact = load_artifact()
-except FileNotFoundError:
-    st.error(
-        "❌ Could not find `churn_model.pkl`. Please run all cells in "
-        "`Customer_Churn_Classification.ipynb` first — it saves this file "
-        "automatically at the end."
-    )
-    st.stop()
+artifact = load_artifact()
 
 model = artifact["model"]
 model_name = artifact["model_name"]

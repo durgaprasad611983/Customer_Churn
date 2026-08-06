@@ -9,7 +9,7 @@ Run with:
     streamlit run app.py
 """
 
-#import pickle
+import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st

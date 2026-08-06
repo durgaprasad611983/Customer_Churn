@@ -31,8 +31,7 @@ st.set_page_config(
 # -----------------------------------------------------------------
 @st.cache_resource
 def load_artifact():
-    model = pickle.load(f)
-    return model
+    return joblib.load("churn_model.pkl")
     
 @st.cache_data
 def load_data():

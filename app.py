@@ -157,7 +157,7 @@ df["Churn"].value_counts()
 
 """## **Step 4: Exploratory Data Analysis (EDA)**
 
-EDA simply means **"getting familiar with messy real-world data and cleaning it up"**. Real data is almost never perfect — it usually has missing values, duplicate rows, and weird extreme values (outliers). We fix these before training a model.
+EDA simply means **"getting familiar with messy real-world data and cleaning it up"**. Real data is almost never perfect. it usually has missing values, duplicate rows, and weird extreme values (outliers). We fix these before training a model.
 
 ### **4.1 Handling Missing Values**
 

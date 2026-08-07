@@ -59,7 +59,7 @@ We will go through the **complete machine learning pipeline**, step by step, exp
 1. Import libraries
 2. Load the dataset
 3. Basic information about the dataset
-4. Exploratory Data Analysis (EDA) — missing values, duplicates, outliers
+4. Exploratory Data Analysis (EDA) missing values, duplicates, outliers
 5. Feature Engineering — scaling, importance, selection
 6. Train-test split
 7. Model training (8 different algorithms)
